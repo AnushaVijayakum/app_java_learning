@@ -24,7 +24,7 @@ public class Main {
 
         double mortgage = principal
                 * ( monthlyInterest * Math.pow( 1+ monthlyInterest, totalMonths))
-                / Math.pow(1 + monthlyInterest, totalMonths) - 1;
+                / (Math.pow(1 + monthlyInterest, totalMonths) - 1);
 
         String formattedMortgage = NumberFormat.getCurrencyInstance().format(mortgage);
 
